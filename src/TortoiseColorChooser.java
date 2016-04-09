@@ -13,6 +13,7 @@ public class TortoiseColorChooser {
 
 		//3. ask the user what color they would like the tortoise to draw
 	String anyColors =	JOptionPane.showInputDialog("What color would you like?");
+	String anyShape= JOptionPane.showInputDialog("What Shape would you like?"); 
 		//4. use an if/else statement to set the pen color that the user requested
 if (anyColors.equalsIgnoreCase("Red")) 
 {
@@ -40,6 +41,15 @@ if (anyColors.equalsIgnoreCase(""))
 	Tortoise.setPenColor(Color.MAGENTA);	
 }  
 
+//if(anyShape.equalsIgnoreCase("Triangle"))
+//{
+//Tortoise.turn(40);
+//Tortoise.move(50);
+//Tortoise.turn(40);
+//Tortoise.move(40);
+//Tortoise.turn(40);
+//}
+
 
 //5. if the user doesn’t enter anything, choose a random color
 
@@ -55,7 +65,7 @@ if (anyColors.equalsIgnoreCase(""))
 		Tortoise.move(50);
 		Tortoise.turn(60);
 		Tortoise.move(100);
-		Tortoise.turn(120);
+		Tortoise.turn(+120);
 		
 		}
 
